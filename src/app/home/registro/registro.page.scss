@@ -1,0 +1,94 @@
+ion-content{
+    --background-color: #fff;
+  }
+  .backgroud-container{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background: url('/assets/images/cabeza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  ion-slides{
+    height: 69%;
+    --bullet-background: #6d78a8;
+    --bullet-background-active:#3880ff;
+  }
+  ion-slide{
+    height: 69%;
+    display: block;
+    /* margin-top: 35px; */
+  }
+  
+  ion-col{
+    margin: 0;
+    padding: 0;
+  }
+  
+  span{
+    padding-top: 60px;
+    font-size: x-large;
+  }
+  
+  .slide1-img{
+    padding-top: 15px;
+    height: 200px;
+    width: 180px;
+    margin: auto;
+  }
+  
+  ion-button{
+    margin-top: 25px;
+  }
+  .recupContra{
+    margin-top: 110px;
+  }
+  .password-ion-icon{
+    /* margin-top: 23px; */
+    padding: 0;
+  }
+  
+  ion-item{
+    border: 1px solid #3880ff; 
+    border-radius: 25px;
+    margin-bottom: 10px;
+  }
+  
+  /* slide 2 */
+  
+  /* .slide2-img{
+    padding-top: 20px;
+    height: 120px;
+  } */
+  
+  a{
+    color: #3880ff;
+  }
+  
+  h1, P{
+    color: #3880ff;
+    font-weight: bolder;
+  }
+  
+  .div-a{
+   font-size: medium;
+   font-weight: bolder;
+   border-radius: 5px solid;
+   background-color: #fff;
+  }
+  .descripcion-app{
+    background-color: red;
+    display: inline;
+    overflow-y: auto !important;
+  }
+  
+  .fondo{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #E0ECFF;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 25px;
+    color: #fff;
+  }
+  

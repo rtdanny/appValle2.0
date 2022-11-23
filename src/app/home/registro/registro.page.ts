@@ -1,39 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators ,FormBuilder,ReactiveFormsModule} from '@angular/forms';
 import { NavController, ToastController } from '@ionic/angular';
-import { DataService } from '../service/data.service';
+import { DataService } from '../../service/data.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-registro',
+  templateUrl: './registro.page.html',
+  styleUrls: ['./registro.page.scss'],
 })
-export class HomePage {
+export class RegistroPage implements OnInit {
 
-  formLogin!: FormGroup;
-  formValue = {nameUser: '', password: ''};
+  formRegistro!: FormGroup;
+  formValue = {name: '',  mail: '', nameUser: '', password: ''};
 
   usuario: any[] = [];
 
   mostrarPassword = false;
   passworVista='eye';
-  
+
   constructor(
     private nav: NavController,
     private dataService: DataService,
     private toastCtrl: ToastController
-  ) {}
+  ) { }
 
   ngOnInit() {
-   
   }
 
-  iniciarSesion(){
-    
-  }
+
 
   registrarse(){
-    this.nav.navigateRoot(['../home/registro']);
+   
   }
 
   mPass(){
@@ -43,6 +40,10 @@ export class HomePage {
     }else{
       this.passworVista = 'eye';
     }
+  }
+
+  ataras(){
+    this.nav.navigateRoot(['../home']);
   }
 
   async present_toast(a: any){
